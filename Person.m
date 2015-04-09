@@ -23,4 +23,15 @@
     return self;
 }
 
+-(NSString *) returnFirstName {
+    return _firstName;
+}
+// working with NSNumber and Passing Parameters
+-(NSNumber *)addTwoNums : (NSNumber*) firstNumber : (NSNumber *) secondNumber {
+    NSNumber *sum = [NSNumber numberWithInteger:([firstNumber intValue] + [secondNumber intValue])];
+    NSLog(@"Sum of %@ and %@ is: %@",firstNumber, secondNumber, sum);
+    return sum;
+}
+
+
 @end
