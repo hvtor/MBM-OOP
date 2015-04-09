@@ -10,4 +10,17 @@
 
 @implementation Person
 
+- (instancetype)init
+
+{
+    self = [super init];
+    if (self) {
+        _firstName = @"Hemant";
+        _lastName = @"Torsekar";
+        _weight = @204;
+        _height = @6.2;
+    }
+    return self;
+}
+
 @end
